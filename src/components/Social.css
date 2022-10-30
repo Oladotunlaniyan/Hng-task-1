@@ -1,0 +1,21 @@
+.social {
+  margin-block: 50px;
+}
+.social > .wrapper {
+  flex-direction: row;
+}
+
+.social-icon {
+  width: 30px;
+}
+
+.social-icon > img {
+  width: 30px;
+  margin-block: 10px;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: transparent;
+  color: transparent;
+}

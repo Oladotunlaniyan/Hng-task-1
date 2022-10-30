@@ -1,0 +1,79 @@
+:root {
+  --color-primary: #101828;
+  --color-grey: #eaecf0;
+  --color-white: #f4f5f7;
+
+  --ff-primary: "Inter", sans-serif;
+
+  --fw-light: 500;
+  --fw-medium: 600;
+  --fw-bold: 700;
+
+  --fs-text: 14px;
+  --fs-heading: 18px;
+  --fs-desktop-text: 18px;
+  --fs-desktop-heading: 20px;
+}
+
+/* ****** GOOGLE FONTS ****** */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* ****** DEFAULTS ****** */
+body {
+  font-family: var(--ff-primary);
+  font-size: var(--fs-text);
+  background-color: var(--color-white);
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+}
